@@ -52,7 +52,7 @@ spec:
     type: string
   - default: "./auto-generated/catalog/released.yaml"
     description: Catalog index file to use for this build
-    name: index-file
+    name: catalog-path
     type: string
   - default: "true"
     description: Execute the build with network isolation
@@ -202,7 +202,7 @@ spec:
       value:
       - $(params.build-args[*])
       - "OPM_IMAGE=$(params.opm-image)"
-      - "INDEX_FILE=$(params.index-file)"
+      - "CATALOG_PATH=$(params.catalog-path)"
     - name: BUILD_ARGS_FILE
       value: $(params.build-args-file)
     - name: SOURCE_ARTIFACT

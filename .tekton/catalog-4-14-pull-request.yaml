@@ -34,7 +34,7 @@ spec:
     value: Dockerfile
   - name: opm-image
     value: registry.redhat.io/openshift4/ose-operator-registry:v4.14
-  - name: index-file
+  - name: catalog-path
     value: "./auto-generated/legacy-catalog/released.yaml"
   pipelineRef:
     name: build-fbc-pipeline

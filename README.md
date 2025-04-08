@@ -14,5 +14,5 @@ podman build -t catalog .
 
 To use a different generated catalog:
 ```bash
-podman build --build-arg --build-arg INDEX_FILE=./auto-generated/<catalog-file>.yaml  -t catalog .
+podman build --build-arg CATALOG_PATH=./auto-generated/catalog/y-stream -t catalog .
 ```
